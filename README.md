@@ -18,20 +18,20 @@ The architecture is split into 4 distinct active processes and 1 shared C librar
 flowchart TD
     %% Define Interfaces
     subgraph Vehicle Sensors
-      CAN[CAN Interface\n(Rust Process)]
+      CAN["CAN Interface\n(Rust Process)"]
     end
     
     subgraph External Network
-      NET[Network Layer\n(C Process)]
+      NET["Network Layer\n(C Process)"]
     end
     
     subgraph Core
-      V2X[V2X Stack\n(Rust Process)]
-      ASN1[[ASN.1 Library\n(C Shared Library)]]
+      V2X["V2X Stack\n(Rust Process)"]
+      ASN1[["ASN.1 Library\n(C Shared Library)"]]
     end
     
     subgraph Encryption
-      SEC[Security Service\n(Rust Process)]
+      SEC["Security Service\n(Rust Process)"]
     end
 
     %% Define connections
