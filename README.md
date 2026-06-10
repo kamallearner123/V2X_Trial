@@ -61,18 +61,18 @@ flowchart TD
 
 ## How to Build and Start
 
-Because this is a multi-process architecture, the easiest way to launch the system is to use the provided `run_demo.sh` script, which compiles the C libraries, builds the Rust crates, and launches the processes in the correct order.
+Because this is a multi-process architecture, the easiest way to launch the system is to use the provided `start.sh` script, which compiles the C libraries, builds the Rust crates, and launches the processes in the correct order.
 
 ### Method 1: The Automated Launcher (Recommended)
 
 1. Open a terminal in the `V2X_Project` directory.
 2. Make sure the script is executable:
    ```bash
-   chmod +x run_demo.sh
+   chmod +x start.sh
    ```
 3. Run the script:
    ```bash
-   ./run_demo.sh
+   ./start.sh
    ```
 4. *Press `Ctrl+C` to gracefully terminate all 4 background processes at once.*
 
